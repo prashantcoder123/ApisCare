@@ -1,19 +1,3 @@
-// import React from "react";
-
-// export default function Products() {
-//   return (
-//     <section className="p-6">
-//       <h2 className="text-2xl font-bold">Our Products</h2>
-//       <ul className="list-disc ml-6 mt-2">
-//         <li>Litchi Honey</li>
-//         <li>Karanj Honey</li>
-//         <li>Mustard Honey</li>
-//         <li>Forest Natural Honey</li>
-//         <li>Bee Boxes & Comb Sheets</li>
-//       </ul>
-//     </section>
-//   );
-// }
 
 
 import React from "react";

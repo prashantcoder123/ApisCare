@@ -1,12 +1,10 @@
-
-
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom";
 import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-} from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
+} from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -14,14 +12,14 @@ const navigation = [
   { name: "Fact sheet", href: "/factsheet" },
   { name: "ContactUs", href: "/contactus" },
   { name: "Company Information", href: "/companyinfo" },
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ")
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
-   const location = useLocation()
+  const location = useLocation();
 
   return (
     <Disclosure as="nav" className="relative bg-orange-700/50 rounded-3xl mt-5">
@@ -34,12 +32,12 @@ export default function Navbar() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md cursor-pointer">
                   <span className="text-lg font-bold text-blue-600">AP</span>
                 </div>
-                 <Link
-    to="/"
-    className="ml-3 text-xl font-bold text-white cursor-pointer"
-  >
-    ApisCare
-  </Link>
+                <Link
+                  to="/"
+                  className="ml-3 text-xl font-bold text-white cursor-pointer"
+                >
+                  ApisCare
+                </Link>
               </div>
 
               {/* Mobile menu button */}
@@ -99,5 +97,5 @@ export default function Navbar() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

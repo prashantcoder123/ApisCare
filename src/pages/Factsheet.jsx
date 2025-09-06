@@ -1,17 +1,4 @@
-// export default function Factsheet() {
-//   return (
-//     <div>
-//       <h1 className="text-2xl font-bold mb-4">Company Factsheet</h1>
-//       <ul className="list-disc pl-6 space-y-2">
-//         <li>Founded: 2020</li>
-//         <li>Headquarters: New Delhi, India</li>
-//         <li>Employees: 150+</li>
-//         <li>Revenue: $5M (2024)</li>
-//         <li>Industry: Healthcare Tech</li>
-//       </ul>
-//     </div>
-//   );
-// }
+
 
 export default function Factsheet() {
   const basicInfo = [
