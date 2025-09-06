@@ -37,10 +37,10 @@ export default function Company() {
             ranjeetazad@gmail.com
           </span>
 
-          <span className="flex items-center gap-2">
+          {/* <span className="flex items-center gap-2">
             <User className="w-4 h-4 text-gray-600" />
             14 yrs
-          </span>
+          </span> */}
         </div>
       </div>
     </section>

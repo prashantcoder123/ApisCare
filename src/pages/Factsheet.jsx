@@ -17,7 +17,6 @@ export default function Factsheet() {
     { label: "GST Registration Date", value: "01-07-2017" },
     { label: "Legal Status of Firm", value: "Proprietorship" },
     { label: "Annual Turnover", value: "1.5 - 5 Cr" },
-    { label: "GST Partner Name", value: "Rekha Sinha" },
   ];
 
   const statutoryProfile = [
@@ -60,7 +59,7 @@ export default function Factsheet() {
               className="flex flex-col sm:flex-row justify-between px-4 py-3"
             >
               <span className="text-gray-600 font-medium">{item.label}</span>
-              <span className="mt-1 sm:mt-0 text-black text-right sm:text-left">
+              <span className="mt-1 sm:mt-0 text-black  sm:text-left">
                 {item.value}
               </span>
             </div>

@@ -15,7 +15,7 @@ import Products from "./pages/Products";
 import Company from "./pages/Company";
 import Director from "./pages/Director";
 import ContactUs from "./pages/ContactUs";
-
+// import Faq from "./pages/Faq;"
 function App() {
   return (
     <Router>
@@ -35,6 +35,7 @@ function App() {
                 <Director />
                 <Contact />
                 <ContactUs />
+                {/* <Faq /> */}
               </>
             }
           />
