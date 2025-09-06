@@ -11,7 +11,7 @@ export default function Products() {
       link: "https://en.wikipedia.org/wiki/Honey",
     },
     {
-      title: "Karang Honey",
+      title: "Karanj Honey",
       desc: "A look into how artificial intelligence is transforming industries and daily life.",
       img: "/images/karang.jpg",
       link: "https://en.wikipedia.org/wiki/Honey",
