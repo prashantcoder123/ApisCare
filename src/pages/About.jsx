@@ -46,19 +46,23 @@ export default function About() {
           {/* Paragraph 1 */}
           <div className="flex items-start gap-3">
             <IdCard className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
-            <p>
-              APISCARE PRIVATE LIMITED having CIN <b>U01492BR2025PTC078608</b> is
+            <p><b>APISCARE PVT.LTD</b> is a honey producing unit, having own beekeeping farm.Our Beekeeping
+            farm and group has more than 5000 <i>Italian</i> bee
+             colonies . We are helping to other bee keepers in our area for good production and quality Our farm yield pure and high quality honey of different variety from differenties areas most of the varities available are 
+             as mustard honey, equaliptus honey, multiflora honey , Litchi honey, Karanj honey , etc. we area ble tyo supply quality, quanty and varites of pure honey according to requrement of the purchers. we specalise in supply of world famous uniflora litchi honey sorced from exclusively Litchi flowers from famous litchi orchrds of Litchi's city,Muzaffarpur.  
+             We are second Generation in this business having good aggency background and knowledge to do this trade to the west. the firm is managed by well collified person Mr. Ranjeet Kumar Singh having master degree in Science and Management.</p>
+            {/* <p>
               <b> 4 days old</b> Private company incorporated with MCA on
               <b> 2nd September, 2025</b>. APISCARE PRIVATE LIMITED is listed in the
               class of Private company and classified as Non-govt company. This
               company is registered at Registrar of Companies(ROC), RoC-Patna with an
               Authorized Share Capital of <b>₹1,00,000</b> and paid-up capital is
               <b> ₹1,00,000</b>.
-            </p>
+            </p> */}
           </div>
 
           {/* Paragraph 2 */}
-          <div className="flex items-start gap-3">
+          {/* <div className="flex items-start gap-3">
             <Users className="w-6 h-6 text-indigo-600 shrink-0 mt-1" />
             <p>
               The company has <b>2 directors/key management personal</b>{" "}
@@ -68,19 +72,19 @@ export default function About() {
               Corporate Identification Number(CIN) provided from MCA is{" "}
               <b>U01492BR2025PTC078608</b>.
             </p>
-          </div>
+          </div> */}
 
           {/* Paragraph 3 */}
-          <div className="flex items-start gap-3">
+          {/* <div className="flex items-start gap-3">
             <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
             <p>
               As per MCA records APISCARE PRIVATE LIMITED is involved in activities
               such as <b>Bee-keeping and production of honey and beeswax</b>.
             </p>
-          </div>
+          </div> */}
 
           {/* Paragraph 4 */}
-          <div className="flex items-start gap-3">
+          {/* <div className="flex items-start gap-3">
             <MapPin className="w-6 h-6 text-red-500 shrink-0 mt-1" />
             <p>
               APISCARE PVT LTD's registered office address is{" "}
@@ -91,27 +95,27 @@ export default function About() {
               . Find other contact information for APISCARE PRIVATE LIMITED such as
               contact number, email, website, gst details and more below.
             </p>
-          </div>
+          </div> */}
 
           {/* Paragraph 5 */}
-          <div className="flex items-start gap-3">
+          {/* <div className="flex items-start gap-3">
             <CalendarDays className="w-6 h-6 text-yellow-600 shrink-0 mt-1" />
             <p>
               APISCARE PRIVATE LIMITED's last Annual General Meeting(AGM) was held on{" "}
               <b>N/A</b>, and the company last updated its financials on <b>N/A</b>.
             </p>
-          </div>
+          </div> */}
 
           {/* Paragraph 6 */}
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <CheckCircle className="w-6 h-6 text-green-600 shrink-0" />
             <p className="font-bold text-green-700">
               Current status of APISCARE PRIVATE LIMITED is Active.
             </p>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
-          <div className="pt-6 border-t space-y-4">
+          {/* <div className="pt-6 border-t space-y-4">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
               Contact Info
             </h2>
@@ -165,7 +169,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

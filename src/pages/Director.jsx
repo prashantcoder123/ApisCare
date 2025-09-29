@@ -43,10 +43,10 @@ export default function Directors() {
                   transition-transform duration-300 hover:scale-110"
                 />
               </div>
-              <p className="text-sm text-gray-500 mb-1">DIN: {d.din}</p>
+              {/* <p className="text-sm text-gray-500 mb-1">DIN: {d.din}</p> */}
               <h3 className="text-lg font-semibold text-blue-700">{d.name}</h3>
               <p className="text-gray-700">{d.designation}</p>
-              <p className="text-gray-600 text-sm">{d.appointment}</p>
+              {/* <p className="text-gray-600 text-sm">{d.appointment}</p> */}
                <div className="flex gap-3 mt-3">
     <a href="#" target="_blank" rel="noopener noreferrer"
        className="text-blue-600 hover:text-blue-800">

@@ -17,7 +17,7 @@ export default function Products() {
       link: "https://en.wikipedia.org/wiki/Honey",
     },
     {
-      title: "Comb Foundation",
+      title: "Wax Comb Foundation Sheet",
       desc: "Exploring decentralized apps, blockchain, and the future of the internet.",
       img: "images/combfoundation.jpeg",
       link: "https://en.wikipedia.org/wiki/Honeycomb",

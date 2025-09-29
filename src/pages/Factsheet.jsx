@@ -1,5 +1,3 @@
-
-
 export default function Factsheet() {
   const basicInfo = [
     { label: "Nature of Business", value: "Wholesaler/Distributor" },
@@ -18,15 +16,12 @@ export default function Factsheet() {
     { label: "Legal Status of Firm", value: "Proprietorship" },
     { label: "Annual Turnover", value: "1.5 - 5 Cr" },
   ];
-
   const statutoryProfile = [
     { label: "GST No.", value: "10BHZPS1930A1ZJ" },
   ];
-
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-6 text-red-500">Fact Sheet</h1>
-
       {/* Basic Information */}
       <div className="bg-white shadow-sm border rounded-md mb-6">
         <h2 className="bg-orange-100 px-4 py-2 text-lg font-semibold border-b">
@@ -46,7 +41,6 @@ export default function Factsheet() {
           ))}
         </div>
       </div>
-
       {/* Statutory Profile */}
       <div className="bg-white shadow-sm border rounded-md">
         <h2 className="bg-orange-50 px-4 py-2 text-lg font-semibold border-b">

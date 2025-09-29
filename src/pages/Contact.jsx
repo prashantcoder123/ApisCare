@@ -22,8 +22,7 @@ export default function Contact() {
                 href="mailto:ranjeetazad@gmail.com"
                 className="text-gray-700"
               >
-                ranjeetazad@gmail.com
-              </a>
+apiscarepvtltd@gmail.com              </a>
             </div>
           </div>
 
@@ -46,7 +45,7 @@ export default function Contact() {
             <div className="flex items-center gap-2">
               <span className="text-red-600">📞</span>
               <a href="tel:+919876543210" className="text-gray-700">
-                +91 7367055728
+                +91 9431239344
               </a>
             </div>
           </div>
