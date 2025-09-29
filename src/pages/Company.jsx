@@ -22,10 +22,10 @@ export default function Company() {
             Shivaraha, Muzaffarpur, Bihar
           </span>
 
-          <span className="flex items-center gap-2">
+          {/* <span className="flex items-center gap-2">
             <CheckCircle className="w-4 h-4 text-green-600" />
             GST - 10BHZPS1930A1ZJ
-          </span>
+          </span> */}
 
           <span className="flex items-center gap-2">
             <Phone className="w-4 h-4 text-blue-600" />

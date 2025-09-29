@@ -7,7 +7,7 @@ export default function Products() {
     {
       title: "Litchi Honey",
       desc: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-      img: "/images/litchi.jpg",
+      img: "/images/litchi3.jpeg",
       link: "https://en.wikipedia.org/wiki/Honey",
     },
     {
@@ -29,15 +29,21 @@ export default function Products() {
       link: "https://en.wikipedia.org/wiki/Beekeeping",
     },
     {
-      title: "Bee Box",
+      title: "Honey BeeHives",
       desc: "Exploring decentralized apps, blockchain, and the future of the internet.",
-      img: "images/bee box.jpg",
+      img: "images/honeybee.jpeg",
       link: "#",
     },
      {
-      title: "Karang Honey",
+      title: "Tulsi Honey",
       desc: "A look into how artificial intelligence is transforming industries and daily life.",
-      img: "/images/karang.jpg",
+      img: "/images/tulsi.jpeg",
+      link: "#",
+    },
+     {
+      title: "Mustard Honey",
+      desc: "",
+      img: "/images/mustard.jpeg",
       link: "#",
     },
    

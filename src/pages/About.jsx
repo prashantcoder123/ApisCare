@@ -35,9 +35,10 @@ export default function About() {
             <h1 className="text-2xl sm:text-3xl font-bold text-white leading-tight">
               APISCARE PRIVATE LIMITED
             </h1>
-            <p className="text-xs sm:text-sm text-gray-100/90">
+            <p className="text-white"><b>An ISO 9001:2015 Certified Company</b></p>
+            {/* <p className="text-xs sm:text-sm text-gray-100/90">
               CIN: U01492BR2025PTC078608
-            </p>
+            </p> */}
           </div>
         </div>
 

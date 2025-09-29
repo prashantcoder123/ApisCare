@@ -22,7 +22,8 @@ export default function Contact() {
                 href="mailto:ranjeetazad@gmail.com"
                 className="text-gray-700"
               >
-apiscarepvtltd@gmail.com              </a>
+              apiscarepvtltd@gmail.com     
+              </a>
             </div>
           </div>
 
@@ -72,7 +73,7 @@ apiscarepvtltd@gmail.com              </a>
           </a>
 
           <a
-            href="mailto:ranjeetazad@gmail.com"
+            href="mailto:apiscarepvtltd@gmail.com"
             className="hover:text-blue-600"
           >
             <i className="fa-solid fa-envelope"></i>

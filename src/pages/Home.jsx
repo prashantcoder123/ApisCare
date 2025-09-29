@@ -21,8 +21,9 @@ export default function Home() {
     <section className="p-6 text-center">
       {/* Heading */}
       <h2 className="text-3xl font-bold">Welcome to ApisCare PRIVATE LIMITED</h2>
+      <h6><b className="text-blue-900">An ISO 9001:2015 Certified Company</b></h6>
       <p className="mt-2 text-orange-600">
-  Pure & Natural <span className="underline font-bold">Honey</span> from Muzaffarpur, Bihar.
+  Pure & Natural <span className="">Honey</span> from Muzaffarpur, Bihar.
 </p>
 
 
@@ -40,6 +41,8 @@ export default function Home() {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
+           
+           
           <SwiperSlide>
             <img
               src="/images/honey1.jpg"
@@ -57,8 +60,22 @@ export default function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <img
+              src="/images/own1.jpg"
+              alt="Honey 1"
+              className="w-full h-[400px] object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
               src="/images/honey3.jpeg"
               alt="Honey 3"
+              className="w-full h-[400px] object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="/images/own2.jpg"
+              alt="Honey 1"
               className="w-full h-[400px] object-cover"
             />
           </SwiperSlide>
@@ -76,6 +93,7 @@ export default function Home() {
               className="w-full h-[400px] object-cover"
             />
           </SwiperSlide>
+
         </Swiper>
       </div>
     </section>
