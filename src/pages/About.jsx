@@ -47,11 +47,7 @@ export default function About() {
           {/* Paragraph 1 */}
           <div className="flex items-start gap-3">
             <IdCard className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
-            <p><b>APISCARE PVT.LTD</b> is a honey producing unit, having own beekeeping farm.Our Beekeeping
-            farm and group has more than 5000 <i>Italian</i> bee
-             colonies . We are helping to other bee keepers in our area for good production and quality Our farm yield pure and high quality honey of different variety from differenties areas most of the varities available are 
-             as mustard honey, equaliptus honey, multiflora honey , Litchi honey, Karanj honey , etc. we area ble tyo supply quality, quanty and varites of pure honey according to requrement of the purchers. we specalise in supply of world famous uniflora litchi honey sorced from exclusively Litchi flowers from famous litchi orchrds of Litchi's city,Muzaffarpur.  
-             We are second Generation in this business having good aggency background and knowledge to do this trade to the west. the firm is managed by well collified person Mr. Ranjeet Kumar Singh having master degree in Science and Management.</p>
+            <p><b>APISCARE PVT.LTD</b> is a honey producing unit, having own beekeeping farm.Our Beekeeping farm and group has more than 5000 <i>Italian</i> bee colonies . We are helping to other bee keepers in our area for good production and quality.Our farm yield pure and high quality honey of different variety from different areas. most of the varities available are as mustard honey, Eucalyptus honey, multiflora honey , Litchi honey, Karanj honey , etc. we are able to supply quality, quantity and varites of pure honey according to requirement of the purchaser. we specalise in supply of world famous uniflora litchi honey sourced from exclusively Litchi flowers from famous litchi orchards of Litchi's city,Muzaffarpur.We are second Generation in this business having good essential background and knowledge to do this trade to the best. the firm is managed by well qualified person Mr. Ranjeet Kumar Singh having master degree in Science and Management.</p>
             {/* <p>
               <b> 4 days old</b> Private company incorporated with MCA on
               <b> 2nd September, 2025</b>. APISCARE PRIVATE LIMITED is listed in the
