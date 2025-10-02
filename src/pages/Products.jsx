@@ -1,92 +1,101 @@
-
-
 import React from "react";
 
 export default function Products() {
   const blogs = [
     {
       title: "Litchi Honey",
-      desc: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      desc: "Sweet, floral honey from litchi blossoms. Thiand <lorejewfnwkjbfkjwbfkjwfbkwjfbkwfbkjwjfbkwbfkjwfbfkwfbfwkfbwkjfbkjwfkjwbfkjwjfkjfbwbffknwfkwjbfkwjfkwejs honey is prized for its distinct taste, aroma, and natural benefits. It is great for boosting energy and strengthening immunity. Add more and more text here to test the scroll behavior inside the card without changing card size.",
       img: "/images/litchi3.jpeg",
       link: "https://en.wikipedia.org/wiki/Honey",
     },
     {
       title: "Karanj Honey",
-      desc: "A look into how artificial intelligence is transforming industries and daily life.",
+      desc: "Rich in antioxidants and <lorejewfnwkjbfkjwbfkjwfbkwjfbkwfbkjwjfbkwbfkjwfbfkwfbfwkfbwand <lorejewfnwkjbfkjwbfkjwfbkwjfbkwfbkjwjfbkwbfkjwfbfkwfbfwkfbwkjfbkjwfkjwbfkjwjfkjfbwbffknwfkwjbfkwjfkwejkjfbkjwfkjwbfkjwjfkjfbwbffknwfkwjbfkwjfkwejbmedicinal properties.",
       img: "/images/karang.jpg",
       link: "https://en.wikipedia.org/wiki/Honey",
     },
     {
       title: "Wax Comb Foundation Sheet",
-      desc: "Exploring decentralized apps, blockchain, and the future of the internet.",
+      desc: "High-quality foundation sheets for beekeepers.",
       img: "images/combfoundation.jpeg",
       link: "https://en.wikipedia.org/wiki/Honeycomb",
     },
     {
       title: "Bee Box",
-      desc: "Exploring decentralized apps, blockchain, and the future of the internet.",
+      desc: "Premium bee boxes for sustainable beekeeping.",
       img: "images/bee box.jpg",
       link: "https://en.wikipedia.org/wiki/Beekeeping",
     },
     {
       title: "Honey BeeHives",
-      desc: "Exploring decentralized apps, blockchain, and the future of the internet.",
+      desc: "Durable bee hives for hobbyists and professionals.",
       img: "images/honeybee.jpeg",
       link: "#",
     },
-     {
+    {
       title: "Tulsi Honey",
-      desc: "A look into how artificial intelligence is transforming industries and daily life.",
+      desc: "Herbal honey with immunity-boosting benefits.",
       img: "/images/tulsi.jpeg",
       link: "#",
     },
-     {
+    {
       title: "Mustard Honey",
-      desc: "",
+      desc: "Strong flavored mustard honey.",
       img: "/images/mustard.jpeg",
       link: "#",
     },
-   
   ];
 
   return (
-    <section className="p-6 max-w-6xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6">Our Products.</h2>
+    <section className="p-6 max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
+        Our Products
+      </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {/* Responsive grid: 1 (sm), 2 (md), 3 (lg) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogs.map((blog, i) => (
           <div
             key={i}
-            className="max-w-sm bg-orange-50 border border-black-200 rounded-lg shadow-sm 
-            dark:bg-gray-800 dark:border-gray-700 
-            transform transition duration-300 hover:scale-105 hover:shadow-xl hover:-translate-y-2"
+            className="bg-gradient-to-tr from-yellow-50 via-orange-50 to-red-50 
+              dark:from-gray-800 dark:via-gray-700 dark:to-gray-800 
+              border border-transparent rounded-xl shadow-md overflow-hidden 
+              transform transition duration-500 hover:scale-105 hover:shadow-xl hover:-translate-y-1 
+              flex flex-col h-[500px]" // equal fixed height
           >
-            <a href={blog.link}>
+            {/* Image */}
+            <a href={blog.link} className="group relative block overflow-hidden">
               <img
-                className="rounded-t-lg w-full h-48 object-cover transition duration-300 hover:opacity-90 rounded-lg"
+                className="w-full h-52 sm:h-48 object-cover transition-transform duration-500 group-hover:scale-110 rounded-t-xl"
                 src={blog.img}
                 alt={blog.title}
               />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition duration-500 rounded-t-xl"></div>
             </a>
-            <div className="p-5">
+
+            {/* Content */}
+            <div className="p-5 flex flex-col flex-1">
               <a href={blog.link}>
-                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="text-xl font-semibold text-gray-900 dark:text-white hover:text-indigo-600 transition-colors break-normal">
                   {blog.title}
                 </h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                {blog.desc}
-              </p>
+
+              {/* Scrollable description */}
+              <div className="flex-1 overflow-y-auto max-h-24 mt-2 pr-1">
+                <p className="text-gray-700 dark:text-gray-300 break-words whitespace-normal">
+                  {blog.desc}
+                </p>
+              </div>
+
+              {/* Button always pinned to bottom */}
               <a
                 href={blog.link}
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white 
-                bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none 
-                focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 
-                transition duration-300"
+                className="inline-flex items-center mt-4 px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-300 shadow"
               >
                 Read more
                 <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  className="w-4 h-4 ms-2"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import BeesAnimation from "./components/BeesAnimation";
 // Pages
 import Factsheet from "./pages/Factsheet";
 import CompanyInfo from "./pages/CompanyInfo";
@@ -18,6 +18,7 @@ import ContactUs from "./pages/ContactUs";
 function App() {
   return (
     <Router>
+      <BeesAnimation />
       <Navbar />
 
       <div className="p-6">

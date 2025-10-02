@@ -1,13 +1,31 @@
 
 
 export default function CompanyInfo() {
+  const incorporationDate = new Date("2025-09-02"); // Date of Incorporation
+  const today = new Date();
+
+  // Calculate difference in days
+  const diffTime = today - incorporationDate;
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+  // Format company age
+  let companyAge;
+  if (diffDays < 30) {
+    companyAge = `${diffDays} day${diffDays !== 1 ? "s" : ""}`;
+  } else if (diffDays < 365) {
+    const months = Math.floor(diffDays / 30);
+    companyAge = `${months} month${months !== 1 ? "s" : ""}`;
+  } else {
+    const years = Math.floor(diffDays / 365);
+    companyAge = `${years} year${years !== 1 ? "s" : ""}`;
+  }
   const info = [
     { label: "CIN", value: "U01492BR2025PTC078608", color: "text-orange-600" },
     { label: "Company Status", value: "Active", color: "text-green-600" },
     { label: "Registration Number", value: "078608" },
     { label: "Date of Incorporation", value: "2nd September, 2025" },
     { label: "RoC", value: "RoC-Patna" },
-    { label: "Company Age", value: "4 days" },
+    { label: "Company Age", value: companyAge },
     { label: "Authorized Capital", value: "₹1,00,000" },
     { label: "Paid-up Capital", value: "₹1,00,000" },
     { label: "Company Category", value: "Company limited by Shares" },

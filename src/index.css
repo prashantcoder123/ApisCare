@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* html {
+  scroll-behavior: smooth;
+}
+a {
+  transition: all 0.3s ease-in-out;
+} */
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

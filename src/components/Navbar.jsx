@@ -22,15 +22,15 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <Disclosure as="nav" className="relative bg-orange-700/50 rounded-3xl mt-5">
+    <Disclosure as="nav" className="relative bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-500/90 backdrop-blur-md shadow-lg rounded-3xl mt-5">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
             <div className="flex h-16 items-center justify-between ">
               {/* Logo + Brand */}
               <div className="flex shrink-0 items-center">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md cursor-pointer">
-                  <span className="text-lg font-bold text-blue-600">AP</span>
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-lg ring-2 ring-yellow-400 hover:scale-110 transition duration-300">
+                  <span className="text-lg font-bold text-blue-600">AC</span>
                 </div>
                 <Link
                   to="/"
