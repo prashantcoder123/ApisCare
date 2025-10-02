@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <section className="p-6 text-center">
       {/* Heading */}
-      <h2 className="text-3xl font-bold">Welcome to ApisCare PRIVATE LIMITED</h2>
+      <h2 className="text-3xl font-bold ">Welcome to ApisCare <span className="font-bold text-2xl">PRIVATE LIMITED</span> </h2>
       <h6><b className="text-blue-900">An ISO 9001:2015 Certified Company</b></h6>
       <p className="mt-2 text-orange-600">
   Pure & Natural <span className="">Honey</span> from Muzaffarpur, Bihar.
