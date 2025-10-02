@@ -34,7 +34,7 @@ export default function Factsheet() {
               className="flex flex-col sm:flex-row justify-between px-4 py-3"
             >
               <span className="text-gray-600 font-medium">{item.label}</span>
-              <span className="mt-1 sm:mt-0 text-black sm:text-left">
+              <span className="mt-1 sm:mt-0 text-black font-bold sm:text-left">
                 {item.value}
               </span>
             </div>
@@ -53,7 +53,7 @@ export default function Factsheet() {
               className="flex flex-col sm:flex-row justify-between px-4 py-3"
             >
               <span className="text-gray-600 font-medium">{item.label}</span>
-              <span className="mt-1 sm:mt-0 text-black  sm:text-left">
+              <span className="mt-1 sm:mt-0 text-black font-bold  sm:text-left ">
                 {item.value}
               </span>
             </div>
