@@ -1,24 +1,34 @@
-
-
 export default function CompanyInfo() {
   const incorporationDate = new Date("2025-09-02"); // Date of Incorporation
   const today = new Date();
 
-  // Calculate difference in days
-  const diffTime = today - incorporationDate;
-  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  // Calculate difference in milliseconds
+  let diffTime = today - incorporationDate;
 
-  // Format company age
-  let companyAge;
-  if (diffDays < 30) {
-    companyAge = `${diffDays} day${diffDays !== 1 ? "s" : ""}`;
-  } else if (diffDays < 365) {
-    const months = Math.floor(diffDays / 30);
-    companyAge = `${months} month${months !== 1 ? "s" : ""}`;
-  } else {
-    const years = Math.floor(diffDays / 365);
-    companyAge = `${years} year${years !== 1 ? "s" : ""}`;
+  // Calculate years
+  let years = today.getFullYear() - incorporationDate.getFullYear();
+  let months = today.getMonth() - incorporationDate.getMonth();
+  let days = today.getDate() - incorporationDate.getDate();
+
+  if (days < 0) {
+    months--;
+    const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+    days += prevMonth.getDate();
   }
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  // Format full age string
+  let companyAge = "";
+  if (years > 0) companyAge += `${years} year${years > 1 ? "s" : ""} `;
+  if (months > 0) companyAge += `${months} month${months > 1 ? "s" : ""} `;
+  if (days > 0) companyAge += `${days} day${days > 1 ? "s" : ""}`;
+
+  companyAge = companyAge.trim() || "0 days";
+
   const info = [
     { label: "CIN", value: "U01492BR2025PTC078608", color: "text-orange-600" },
     { label: "Company Status", value: "Active", color: "text-green-600" },
@@ -32,7 +42,7 @@ export default function CompanyInfo() {
     { label: "Company Sub-Category", value: "Non-govt company" },
     { label: "Class of Company", value: "Private" },
     { label: "Activity", value: "Bee-keeping and production of honey and beeswax" },
-    { label: "Listing Status", value: "Unlisted" }, // This will appear in red
+    { label: "Listing Status", value: "Unlisted" }, 
     { label: "Date of Last Annual General Meeting", value: "N/A" },
     { label: "Date of Latest Balance Sheet", value: "N/A" },
   ];
@@ -43,9 +53,9 @@ export default function CompanyInfo() {
 
       <div className="space-y-4">
         {info.map((item, index) => {
-          const redValues =["Unlisted","N/A","Private"];
+          const redValues = ["Unlisted", "N/A", "Private"];
           const textColor =
-                 item.color || (redValues.includes(item.value) ? "text-red-600" : "text-black");
+            item.color || (redValues.includes(item.value) ? "text-red-600" : "text-black");
           return (
             <div
               key={index}
