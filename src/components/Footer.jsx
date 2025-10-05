@@ -8,12 +8,12 @@ export default function Footer() {
     <footer className="bg-black text-gray-300 py-4 text-center mt-4 rounded-lg mb-4">
       {/* Company Info */}
       <div className="flex flex-col md:flex-row items-center justify-center md:space-x-2 space-y-1 md:space-y-0">
-        <p className="text-sm">© {new Date().getFullYear()} Apis Care Pvt. Ltd.</p>
+        <p className="text-sm ">© {new Date().getFullYear()} Apis Care Pvt. Ltd.</p>
         <p className="text-sm">All Rights Reserved.</p>
       </div>
 
       {/* Developer */}
-      <p className="text-sm mt-3">
+      <p className="text-sm mt-1">
         Developed by <span className="font-semibold text-white">Prashant Kumar</span>
       </p>
 
